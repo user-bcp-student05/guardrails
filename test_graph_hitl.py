@@ -27,7 +27,7 @@ class Stub:
 
     ROLES = [
         ("Eres el arquitecto de software del equipo", "architect"),
-        ("Eres un desarrollador backend",   "backend"),
+        ("# Backend BCP",   "backend"),
         ("Eres un desarrollador frontend/API",     "frontend"),
         ("Eres el Ingeniero de pruebas", "testing"),
         ("Eres el Revisor de seguridad", "security"),

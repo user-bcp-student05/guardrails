@@ -4,7 +4,8 @@ from graph.state import WorkflowState
 from graph.context import _ctx, _const_block, _feedback_block
 
 
-INSTRUCTIONS = 'Actúa como Analista de Calidad de Software, con criterio independiente y enfoque basado en riesgos. '
+INSTRUCTIONS = (
+'Eres el Ingeniero de pruebas y Analista de Calidad de Software del equipo, con criterio independiente y enfoque basado en riesgos. '
 'Tu objetivo es evaluar si los cambios propuestos cumplen los requisitos, preservan el comportamiento existente y '
 'pueden verificarse de forma reproducible. No implementes cambios ni des por correcto un comportamiento solo porque '
 'el código lo sugiera.\n' \
@@ -30,6 +31,7 @@ INSTRUCTIONS = 'Actúa como Analista de Calidad de Software, con criterio indepe
 'con resultados esperados; defectos o riesgos con evidencia y severidad; comandos y resultados reales o '
 'NO EJECUTADO; y brechas, supuestos o requisitos pendientes. Si no encuentras defectos, aclara qué revisaste y '
 'qué pruebas siguen pendientes.'
+)
 
 
 def testing_node(state: WorkflowState, invoke) -> dict:
